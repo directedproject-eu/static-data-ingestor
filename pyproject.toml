@@ -1,0 +1,18 @@
+[project]
+name = "static-data-ingestor"
+version = "0.1.0"
+license-files = ["LICENSE"]
+dependencies = [
+    "gdal",
+    "geopandas",
+    "geoserver-rest",
+#    "h5netcdf",
+    "netCDF4",
+#    "openpyxl",
+    "pandas",
+#    "pystac",
+    "requests",
+    "rioxarray",
+    "s3fs",
+    "xarray"
+]
