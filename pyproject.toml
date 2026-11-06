@@ -11,6 +11,7 @@ dependencies = [
 #    "openpyxl",
     "pandas",
 #    "pystac",
+    "pyproj",
     "requests",
     "rioxarray",
     "s3fs",
