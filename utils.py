@@ -35,6 +35,7 @@ def upload_coverage_to_geoserver(
     client.create_coveragestore(layer_name=layer_name, path=filename, workspace=workspace,
                                 file_type=file_type, content_type=content_type)
     logger.info(f"Uploaded {filename} to GeoServer")
+    return layer_name
 
 
 def upload_shapefile_to_geoserver(
