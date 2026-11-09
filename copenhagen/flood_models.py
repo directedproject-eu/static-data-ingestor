@@ -19,6 +19,9 @@
 #   rwl1_scalgo_pluvial_frederiksund_30mm
 #   rwl1_saferplaces_coastal_jyllinge_170cm
 # Note that special characters like æ might need be changed manually before running the script.
+# Note on the GeoServer style: style sheets have to be uploaded separately to GeoServer, this script is not doing that.
+# SLD files are available in the subfolder "geoserver_styles". They can simply be copy-pasted into the GeoServer UI
+# mask, or this script could be extended.
 import os
 import re
 

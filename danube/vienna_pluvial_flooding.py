@@ -6,10 +6,12 @@
 # - Original crs: UTM zone 33N
 #   → reprojecting all files to the crs the frontend is using (typically EPSG:3857) might lead to a performance boost
 # The script prepares and uploads the data to GeoServer.
-# Note that styles have to be added to GeoServer separately before they can be configured for a certain layer.
+# Note on the GeoServer style: style sheets have to be uploaded separately to GeoServer, this script is not doing that.
+# SLD files are available in the subfolder "geoserver_styles". They can simply be copy-pasted into the GeoServer UI
+# mask, or this script could be extended.
 import os
 
-from ..utils import upload_coverage_to_geoserver, upload_geopackage_to_geoserver, update_style
+from utils import upload_coverage_to_geoserver, upload_geopackage_to_geoserver, update_style
 
 
 if __name__ == "__main__":

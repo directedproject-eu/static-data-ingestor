@@ -9,13 +9,13 @@
 # Originally, the data is stored in a single file. Each feature in the file has several attributes corresponding
 # to different SSP scenarios and return periods. For the GeoServer upload, these are separated into individual files.
 # This is done with the shell script "danube_model_flood_return_period_shift_split_files.sh".
-# Note on the GeoServer style: style sheets have to be uploaded manually to GeoServer, this script is not doing that.
+# Note on the GeoServer style: style sheets have to be uploaded separately to GeoServer, this script is not doing that.
 # SLD files are available in the subfolder "geoserver_styles". They can simply be copy-pasted into the GeoServer UI
 # mask, or this script could be extended.
 
 import os
 
-from ..utils import upload_geopackage_to_geoserver, update_style
+from utils import upload_geopackage_to_geoserver, update_style
 
 
 if __name__ == "__main__":

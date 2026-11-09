@@ -10,7 +10,7 @@
 # Dam break scenarios simulated with RIM2D. A docx report about the simulations is available next to the data.
 # In total, six different scenarios have been simulated. This script is only configured for one of the scenarios, i.e.
 # the HRB Eicherscheid base breach scenario.
-# Note on the GeoServer styles: style sheets have to be uploaded manually to GeoServer, this script is not doing that.
+# Note on the GeoServer styles: style sheets have to be uploaded separately to GeoServer, this script is not doing that.
 # SLD files are available in the subfolder "geoserver_styles". They can simply be copy-pasted into the GeoServer UI
 # mask, or this script could be extended.
 
